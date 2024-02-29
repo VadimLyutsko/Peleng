@@ -1,0 +1,42 @@
+@import '../../../styles/variables.module';
+
+.navigateContainer {
+  display: flex;
+  justify-content: center;
+  background-color: $gray-color;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @media screen and (max-width: $table) {
+    margin-bottom: 25px;
+  }
+}
+
+.navigateItem,
+.navigateActiveItem {
+  font-size: 26px;
+  margin: 0 15px;
+  color: $black-color;
+  transition: color 0.5s;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $table) {
+    font-size: 2.75vw;
+    margin: 0 8px;
+  }
+}
+
+.navigateItem {
+  &:hover {
+    color: $red-hover-color;
+  }
+}
+.navigateActiveItem {
+  color: $red-color;
+  cursor: default;
+}

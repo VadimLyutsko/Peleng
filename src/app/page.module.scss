@@ -1,0 +1,28 @@
+@import './styles/variables.module';
+
+.logoImage {
+  fill: $red-color;
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $table) {
+    padding-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.mainBlock {
+  background-color: #fff;
+  border: 1px solid rgba($gray-color, 0.5);
+  margin-bottom: 50px;
+}
+
+.content {
+  fill: $red-color;
+  font-size: 26px;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-line;
+}

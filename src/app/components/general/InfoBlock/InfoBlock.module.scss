@@ -1,0 +1,59 @@
+@import '../../../styles/variables.module';
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.estimationContainer {
+  display: flex;
+  align-items: center;
+}
+
+.eyeImage,
+.fireImage,
+.commentImage {
+  width: 25px;
+  height: 25px;
+  fill: $gray-color;
+
+  @media screen and (max-width: 900px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.data,
+.views,
+.commentsCount {
+  margin-right: 15px;
+  color: $gray-color;
+  font-size: 12px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 10px;
+  }
+}
+
+.eyeImage,
+.commentImage {
+  margin-right: 5px;
+}
+
+.commentImage {
+  transform: rotateY(180deg);
+}
+
+.commentsCount {
+  color: $gray-color;
+}
+
+.fireImage {
+  cursor: pointer;
+  fill: $gray-color;
+  transition: fill 0.5s;
+
+  &:hover {
+    fill: $red-color;
+  }
+}

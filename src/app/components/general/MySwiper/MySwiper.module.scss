@@ -1,0 +1,72 @@
+@import '../../../styles/variables.module';
+
+.swiper {
+  // width: calc(100vw - (100vw - 1000px) / 2);
+  margin-bottom: 250px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  max-width: 24.4%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border: 1px solid rgba($gray-color, 0.5);
+
+  @media screen and (max-width: 1250px) {
+    max-width: 24.3%;
+  }
+
+  @media screen and (max-width: $table) {
+    max-width: 24%;
+  }
+
+  @media screen and (max-width: 574px) {
+    max-width: 49.25%;
+  }
+
+  // @media screen and (max-width: 385px) {
+  //   max-width: 100%;
+  // }
+}
+
+.articleImage {
+  margin-bottom: 50px;
+  min-height: 175px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 25px;
+    min-height: 26vh;
+  }
+}
+
+.descriptionContainer {
+  padding: 0 15px 10px 15px;
+
+  @media screen and (max-width: 900px) {
+    padding: 0 10px 5px 10px;
+  }
+}
+
+.description {
+  white-space: pre-line;
+  color: $gray-color;
+  font-size: 20px;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 1.6vw;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 574px) {
+    font-size: 4.5vw;
+  }
+}
